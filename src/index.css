@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   body {
-    @apply h-full w-full overflow-y-hidden;
+    @apply h-full w-full bg-background;
   }
 
   h1 {

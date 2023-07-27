@@ -5,19 +5,23 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      base: "#D7D7D7",
-      primary: "#006473",
-      secondary: "#3B4F5F",
-      transparent: "transparent",
-      touch: "#3B4F5F20",
-      success: "#287300",
-      process: "#6B7300",
-      error: "#FF0000",
-      white: "#fff",
-      black: "#000",
+      base: "#0a192f",
+      primary: "#59c6ba",
+      secondary: "#8892b0",
+      black: colors.black,
+      white: colors.white,
+      slate: colors.slate,
       gray: colors.gray,
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        background: "url('./src/assets/background.svg')",
+      },
+      fontFamily: {
+        title: ["Permanent Marker", "cursive"],
+        secondary: ["Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
